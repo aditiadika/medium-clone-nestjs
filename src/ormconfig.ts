@@ -8,5 +8,6 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     password: 'changeme',
     database: 'medium_clone',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
-    synchronize: true,
+    synchronize: false,
+    migrations: [__dirname + '/migration/**/*.{.ts,.js}'],
 }
